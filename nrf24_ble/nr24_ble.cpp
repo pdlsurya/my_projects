@@ -267,8 +267,7 @@ void NRF24_BLE::adv_listen()
          
          memcpy(dev_name, &ble_instance.pdu_buffer.payload[i+1],name_len);
            Serial.println((char*)dev_name);
-           //Serial.println(get_device_sum(dev_name));
-           
+          
          for(uint8_t i=0;i<4;i++)
          {
           if(get_device_sum(dev_name)==device_id[i])
@@ -289,9 +288,7 @@ void NRF24_BLE::adv_listen()
           device_index++;
           if(device_index>4)
              device_index=0;
-          //clearPart(y>>=3,0,64);
           printString(dev_name,0,y,6);
-          //display();
           y+=16;
           Serial.println("refresh");
           
