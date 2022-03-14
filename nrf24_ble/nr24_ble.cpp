@@ -169,7 +169,9 @@ void NRF24_BLE::whiten_data(uint8_t length)
 	
  }
 }
-uint8_t mydata[11]={0x15,0x34,0xcd,0xab,0xef,0x48,0x51,0x34};
+
+
+
 void NRF24_BLE::compute_crc( uint8_t len, uint8_t* crc_buf)
 {
  uint8_t* data = (uint8_t*)&ble_instance.pdu_buffer;
