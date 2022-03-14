@@ -75,7 +75,6 @@ static inline void timer_list_node_delete(softTimer_node_t *instance)
 	if(instance==head_node && head_node->next_node!=NULL)
 	{
 		delete_first_node(&head_node);
-		debug_log_print("head deleted");
 	}
 
 	//if there is only one timer node in the list, unlink the node by making head node NULL.
@@ -94,13 +93,12 @@ static inline void timer_list_node_delete(softTimer_node_t *instance)
         {
         	 current_node->next_node=NULL;
         	 timers_count--;
-        	 debug_log_print("end deleted");
         	 return;
         }
         //if timer node corresponds to the node in the middle of the list, remove the node and reassign next_node pointer.
 		current_node->next_node=instance->next_node;
 		instance->next_node=NULL;
-		debug_log_print("mid deleted");
+	
 	}
 	timers_count--;
 }
@@ -196,7 +194,7 @@ void softTimer_start(softTimer_node_t * instance)
 
     //load CC register with the ticks corresponding to next timer to be triggered.
 	NRF_RTC2->CC[1]=next_trig_ticks;
-	 debug_log_print("RTC COUNTER=%d", NRF_RTC2->COUNTER);
+
 	//Check if RTC peripheral is started. If not, start the peripheral and set rtc_stated flag.
 	if(!rtc_started)
 	{
