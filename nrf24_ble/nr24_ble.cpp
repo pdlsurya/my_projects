@@ -173,7 +173,7 @@ void NRF24_BLE::whiten_data(uint8_t length) //Data whitening
 
 
 
-void NRF24_BLE::compute_crc( uint8_t len, uint8_t* crc_buf)
+void NRF24_BLE::compute_crc( uint8_t len, uint8_t* crc_buf) //CRC computation
 {
  uint8_t* data = (uint8_t*)&ble_instance.pdu_buffer;
 	
