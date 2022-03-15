@@ -58,7 +58,7 @@ void send_bit(bool data_bit)
    I2C_DELAY;
 }
 
-bool i2c_write(uint8_t data)
+bool i2c_write(uint8_t data) //send byte
 {
 	for(uint8_t i=0; i<8;i++)
 	{
