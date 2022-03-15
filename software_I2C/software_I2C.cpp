@@ -52,7 +52,7 @@ void send_bit(bool data_bit)
 
    I2C_DELAY;
    SET_SCL;
-   while(read_scl()==0);
+   while(read_scl()==0); //Clock stretching
    I2C_DELAY;
    CLEAR_SCL;
    I2C_DELAY;
