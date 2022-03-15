@@ -68,7 +68,7 @@ bool i2c_write(uint8_t data)
 	return (read_ack()==0)?1:0;
 }
 
-void i2c_start(uint8_t address)
+void i2c_start(uint8_t address) //Start I2C Transmission
 {
   //SDA and SCL are already in high state after the stop condition
 	CLEAR_SDA;
