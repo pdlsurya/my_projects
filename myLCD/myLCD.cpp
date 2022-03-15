@@ -7,7 +7,7 @@
 #endif
 
 
-void myLCD::I2C_write(uint8_t data)
+void myLCD::I2C_write(uint8_t data) //Write to I2C bus
 {
   #if defined(HARDWARE_I2C)
   Wire.beginTransmission(i2c_address);
