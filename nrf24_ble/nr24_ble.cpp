@@ -143,7 +143,7 @@ bool NRF24_BLE::advertise()
 }
 
 
-void NRF24_BLE::whiten_data(uint8_t length)
+void NRF24_BLE::whiten_data(uint8_t length) //Data whitening
 {
 	uint8_t *temp= (uint8_t*)&ble_instance.pdu_buffer;
 	uint8_t lfsr=channel[ble_instance.current_freq_index];
