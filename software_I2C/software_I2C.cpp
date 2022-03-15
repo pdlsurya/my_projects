@@ -90,4 +90,8 @@ void i2c_stop()
   
 
 }
+<<<<<<< HEAD
 
+=======
+//Made changes on website
+>>>>>>> 52476a4ed4d963e3097ddcc7c35654874c199a23
