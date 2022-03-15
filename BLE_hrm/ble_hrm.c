@@ -14,7 +14,7 @@
 
 #include "ble_hrm.h"
 
-#define MAX_RR_CNT 2 //Maximum RR Count
+#define MAX_RR_CNT 2 
 
 typedef struct
 {
