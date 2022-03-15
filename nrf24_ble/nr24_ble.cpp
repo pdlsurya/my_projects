@@ -202,7 +202,7 @@ void NRF24_BLE::compute_crc( uint8_t len, uint8_t* crc_buf)
 		 crc_buf[i]=ptr[i];
 }
 
-void NRF24_BLE::adv_listen()
+void NRF24_BLE::adv_listen() //Listern to advertising packets
 { 
   
 	if(!(ble_instance.ble_mode==BLE_MODE_LISTEN))
