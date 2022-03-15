@@ -51,7 +51,7 @@ void myLCD::write_string(uint8_t* chr)
       write_char(chr[i]);
 }
 
-void myLCD::set_cursor(uint8_t row, uint8_t column)
+void myLCD::set_cursor(uint8_t row, uint8_t column) //set Cursor position
 {
   send_command((row*0x40+column)|0x80);
 }
