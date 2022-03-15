@@ -20,7 +20,7 @@ uint8_t read_scl()
 
 }
 
-bool read_ack()
+bool read_ack() //read acknowledgement
 {
   SET_SDA;
   I2C_DELAY;
