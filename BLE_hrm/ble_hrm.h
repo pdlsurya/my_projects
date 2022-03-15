@@ -1,3 +1,4 @@
+/*BLE HRM HEADER FILE */
 
 #ifndef BLE_HRM_SRV_H__
 #define BLE_HRM_SRV_H__
