@@ -15,7 +15,7 @@ uint8_t device_index;
 bool match;
 uint8_t device_id[4];
 
-uint32_t get_device_sum(uint8_t* device_name)
+uint32_t get_device_sum(uint8_t* device_name) //Device name digest
 {
   return uint32_t(device_name[6]);
 }
