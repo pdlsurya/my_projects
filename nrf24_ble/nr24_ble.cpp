@@ -78,7 +78,7 @@ void NRF24_BLE::begin(ble_config_t* config_data)
   
 }
 
-void NRF24_BLE::hop_channel() //Frequency hopping spread spectrum
+void NRF24_BLE::hop_channel() //Frequency hopping spread spectrum technique
 {
 	ble_instance.current_freq_index++;
 	if(ble_instance.current_freq_index>=sizeof(channel))
