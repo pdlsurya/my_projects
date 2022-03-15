@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "software_I2C.h"
 
-//Local changes are here
+
 #define I2C_DELAY delayMicroseconds(5)
 #define SET_SDA  pinMode(i2c_sda, INPUT)
 #define CLEAR_SDA pinMode(i2c_sda, OUTPUT)
@@ -90,6 +90,4 @@ void i2c_stop()
   
 
 }
-
-//Made changes on website
 
