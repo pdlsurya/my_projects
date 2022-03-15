@@ -6,8 +6,8 @@
 
 typedef struct
 {
-	uint16_t rr_intervals[2];
-	uint8_t rr_intervals_cnt;
+	uint16_t rr_intervals[2]; //RR intervals
+	uint8_t rr_intervals_cnt;//RR intervals count
 
 }rr_interval_t; //Structure for rr intervals
 
