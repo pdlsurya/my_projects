@@ -21,7 +21,7 @@ uint32_t get_device_sum(uint8_t* device_name)
 }
 
 
-void NRF24_BLE::reverse_bit_order(uint8_t length)
+void NRF24_BLE::reverse_bit_order(uint8_t length)//Reverse bit order of a byte
 {
 
 uint8_t *temp=(uint8_t*)&ble_instance.pdu_buffer;
