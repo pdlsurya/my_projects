@@ -35,7 +35,7 @@ bool read_ack() //read acknowledgement
 }
 
 
-void i2c_init(uint8_t sda, uint8_t scl)
+void i2c_init(uint8_t sda, uint8_t scl) //Initialize I2C bus
 {
 	i2c_sda=sda;
 	i2c_scl=scl;
