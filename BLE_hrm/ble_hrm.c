@@ -22,7 +22,7 @@ typedef struct
     uint16_t hrm_char_handle;
     uint16_t cccd_handle;
 }
-ble_hrm_c_handles_t;
+ble_hrm_c_handles_t; //Structure to hold BLE handles from server.
 
 static struct
 {
