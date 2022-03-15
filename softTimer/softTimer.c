@@ -324,7 +324,7 @@ void softTimer_init()
 	NRF_RTC2->INTENSET=CC1_INT_MASK;
 	NRF_RTC2->PRESCALER=RTC_PRESCALER;
 	NVIC_SetPriority(RTC2_IRQn,RTC_IRQ_PRIORITY);
-    NVIC_EnableIRQ(RTC2_IRQn);
+        NVIC_EnableIRQ(RTC2_IRQn); //Enable RTC2 Interrupt
 }
 
 /*Interrrupt handler for RTC1 peripheral */
