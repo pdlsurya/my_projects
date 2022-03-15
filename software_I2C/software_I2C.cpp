@@ -14,7 +14,7 @@ uint8_t i2c_scl;
 uint8_t i2c_sda;
 uint8_t ack;
 
-uint8_t read_scl()
+uint8_t read_scl() //read SCL line
 {
 	return digitalRead(i2c_scl);
 
