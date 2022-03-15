@@ -33,7 +33,7 @@ void myLCD::send_command(uint8_t command)
   I2C_write(0xF8);
 }
 
-void myLCD::write_char(uint8_t data)
+void myLCD::write_char(uint8_t data) //Print ASCII character
 {
   I2C_write(0x0D|(data & 0xF0));
   delayMicroseconds(37);
