@@ -9,7 +9,6 @@
 #define SET_SCL  pinMode(i2c_scl, INPUT)
 #define CLEAR_SCL pinMode(i2c_scl, OUTPUT)
 
-//Global variable declarations
 uint8_t i2c_scl;
 uint8_t i2c_sda;
 uint8_t ack;
