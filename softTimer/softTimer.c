@@ -330,6 +330,6 @@ void softTimer_init()
 /*Interrrupt handler for RTC1 peripheral */
 void RTC2_IRQHandler(void)
 {
-	NRF_RTC2->EVENTS_COMPARE[1] = 0;
-    handle_timers();
+    NRF_RTC2->EVENTS_COMPARE[1] = 0;
+    handle_timers(); //Execute timers
 }
