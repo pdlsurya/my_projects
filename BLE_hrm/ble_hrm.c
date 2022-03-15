@@ -38,7 +38,7 @@ static ble_hrm_c_handles_t ble_hrm_c_handles;
 
 static uint16_t ble_val;
 
-EDS_GROUP_DEFINE(BLE_SERVICE_C_HRM);
+EDS_GROUP_DEFINE(BLE_SERVICE_C_HRM); //define event group
 
 
 /**@brief Function for creating a message for writing to the CCCD. */
