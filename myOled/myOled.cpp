@@ -9,7 +9,7 @@
 #include "software_I2C.h"
 #endif
 
-#define OLED_ADDRESS 0x3C
+#define OLED_ADDRESS 0x3C //Oled I2C address
 #define DISP_ON 0xAF
 #define DISP_OFF 0xAE
 #define NORM_MODE 0xA6
@@ -17,7 +17,7 @@
 #define PAGE_ADDRESSING_MODE 0x02
 #define TYPE_CMD 0x00
 #define TYPE_DATA 0x40
-#define CMD_ROL 0xA1
+#define CMD_ROL 0xA1      
 #define CMD_SCAN_COM63 0xC8
 #define CMD_START_RMW 0xE0 //Read-Modify-Write start
 #define CMD_STOP_RMW 0xEE  //Read-Modify-Write end
