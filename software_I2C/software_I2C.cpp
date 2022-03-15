@@ -43,7 +43,7 @@ void i2c_init(uint8_t sda, uint8_t scl) //Initialize I2C bus
 
 
 
-void send_bit(bool data_bit)
+void send_bit(bool data_bit) //Send data bit
 {
    if(data_bit)
    	 SET_SDA;
