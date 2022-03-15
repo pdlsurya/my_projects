@@ -45,7 +45,7 @@ while(length--)
 
 }
 
-void NRF24_BLE::add_adv_data(uint8_t data_size, uint8_t type, uint8_t* data)
+void NRF24_BLE::add_adv_data(uint8_t data_size, uint8_t type, uint8_t* data)//Add advertisement data into Advertising PDU
 {
   adv_data_t* ptr=(adv_data_t*)(ble_instance.pdu_buffer.payload+ble_instance.pl_size);
   ptr->length=data_size+1;
