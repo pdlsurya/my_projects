@@ -79,7 +79,7 @@ void i2c_start(uint8_t address) //Start I2C Transmission
 
 }
 
-void i2c_stop()
+void i2c_stop() //Stop I2C transmission
 {
 	CLEAR_SDA;
 	SET_SCL;
