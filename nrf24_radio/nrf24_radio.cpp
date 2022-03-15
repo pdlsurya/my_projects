@@ -27,7 +27,7 @@ void NRF24_RADIO::clear_irq_flags(uint8_t flags)
 	write_register(STATUS, &nrf24_reg.REG_STATUS,1);
 }
 
-uint8_t NRF24_RADIO::read_status()
+uint8_t NRF24_RADIO::read_status() //Read Radio Status register
 {
 	uint8_t radio_status;
 	digitalWrite(CS_pin, LOW);
