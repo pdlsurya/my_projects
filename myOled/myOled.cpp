@@ -328,7 +328,7 @@ void printString(const char* str, uint8_t xpos, uint8_t ypos, uint8_t font_size,
 }
 
 #if defined(PLATFORM_ESP8266)
-void print7Seg_digit(char C, uint8_t xpos, uint8_t ypos)
+void print7Seg_digit(char C, uint8_t xpos, uint8_t ypos) //print Seven segment digit
 {
 	 char chr;
 	
