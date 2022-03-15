@@ -9,7 +9,7 @@ typedef struct
 	uint16_t rr_intervals[2];
 	uint8_t rr_intervals_cnt;
 
-}rr_interval_t;
+}rr_interval_t; //Structure for rr intervals
 
 #endif // BLE_HRM_SRV_H__
 
