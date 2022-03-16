@@ -12,8 +12,8 @@
 #define OLED_ADDRESS 0x3C //Oled I2C address
 #define DISP_ON 0xAF
 #define DISP_OFF 0xAE
-#define NORM_MODE 0xA6
-#define REV_MODE 0xA7
+#define NORM_MODE 0xA6 //Normal mode
+#define REV_MODE 0xA7  //Reverse mode
 #define PAGE_ADDRESSING_MODE 0x02
 #define TYPE_CMD 0x00
 #define TYPE_DATA 0x40
