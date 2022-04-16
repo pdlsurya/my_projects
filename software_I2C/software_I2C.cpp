@@ -2,7 +2,7 @@
 #include "software_I2C.h"
 
 
-#define I2C_DELAY delayMicroseconds(5)
+#define I2C_DELAY delayMicroseconds(5) //delay
 #define SET_SDA  pinMode(i2c_sda, INPUT)
 #define CLEAR_SDA pinMode(i2c_sda, OUTPUT)
                   
