@@ -56,7 +56,7 @@ void myLCD::set_cursor(uint8_t row, uint8_t column) //set Cursor position
   send_command((row*0x40+column)|0x80);
 }
 
-void myLCD::backlight_on()
+void myLCD::backlight_on() 
 {
    backlight_mask=0xFF;
 }
@@ -90,7 +90,7 @@ void myLCD::autoscroll_right()
   I2C_write(func_cmd & 0xF8);//SET EN low
 }
 
-void myLCD::write_custom_char(uint8_t pos, uint8_t chr[])
+void myLCD::write_custom_char(uint8_t pos, uint8_t chr[]) //Display custom characters
 {
    send_command((pos<<3)|0x40);
    delayMicroseconds(37);
