@@ -37,3 +37,4 @@ void function_set(uint8_t func_cmd);
 };
 
 #endif //MYLCD_H
+//end-of-file
