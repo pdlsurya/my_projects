@@ -12,7 +12,7 @@
 #define CMD_AUTO_SCROLL_RIGHT 0X1C
 #define CMD_AUTO_SCROLL_LEFT 0X18
 
-class myLCD {
+class myLCD { //Class declaration
 public:
 void backlight_on();
 void backlight_off();
