@@ -9,7 +9,7 @@
 
 void myLCD::I2C_write(uint8_t data) //Write to I2C bus
 {
-  #if defined(HARDWARE_I2C)
+  #if defined(HARDWARE_I2C) //using hardware I2C
   Wire.beginTransmission(i2c_address);
   Wire.write(data & backlight_mask);
   Wire.endTransmission();
