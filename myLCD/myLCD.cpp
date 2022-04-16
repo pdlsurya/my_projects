@@ -126,7 +126,7 @@ void myLCD::init(uint8_t lcd_address, uint8_t sda, uint8_t scl)
  
   send_command(CMD_FUNC_DOT_LINE); //5X8 dots, 2 line display
   
-  send_command(CMD_DISP_ON_OFF);   
+  send_command(CMD_DISP_ON_OFF);  //DISPLAY_ON 
   
   clear_display();
  
