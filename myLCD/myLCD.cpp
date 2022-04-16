@@ -14,7 +14,7 @@ void myLCD::I2C_write(uint8_t data) //Write to I2C bus
   Wire.write(data & backlight_mask);
   Wire.endTransmission();
 
-  #elif defined(SOFTWARE_I2C)
+  #elif defined(SOFTWARE_I2C)  //Using software I2C
    i2c_start(i2c_address);
    i2c_write(data & backlight_mask);
    i2c_stop();  
