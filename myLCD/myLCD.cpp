@@ -133,3 +133,4 @@ void myLCD::init(uint8_t lcd_address, uint8_t sda, uint8_t scl)
   send_command(CMD_ENTRY_MODE);//left to right
  
 }
+//end-of-file
