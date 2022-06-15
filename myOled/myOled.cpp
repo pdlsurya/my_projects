@@ -473,7 +473,7 @@ void plot(float current_x, float current_y) //Line plot
 
   if (prev_x >= 127)
   {
-    prev_x = 0;
+    prev_x = 0; //Start from x=0
   }
 }
 
