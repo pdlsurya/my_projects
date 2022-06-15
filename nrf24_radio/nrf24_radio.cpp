@@ -162,11 +162,12 @@ void NRF24_RADIO::set_mode(radio_mode_t mode)
 		case TX_MODE:
 		nrf24_reg.REG_CONFIG&=0xFE;
 		break;
+		
 		case RX_MODE:
 		digitalWrite(CE_pin, HIGH);
 		nrf24_reg.REG_CONFIG|=0X01;
-		
 		break;
+
 		default:
          break;
 	}
