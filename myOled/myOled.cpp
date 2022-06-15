@@ -462,7 +462,7 @@ void drawLine(float x1, float y1, float x2, float y2, bool set)
     setPixel((i - c) / slope, i, set);
 }
 
-void plot(float current_x, float current_y)
+void plot(float current_x, float current_y) //Line plot
 {
   static uint8_t prev_x = 0;
   static float prev_y = 0;
