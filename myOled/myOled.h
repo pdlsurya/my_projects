@@ -1,7 +1,7 @@
 #ifndef __MYOLED_H
 #define __MYOLED_H
 
-#define PLATFORM_AVR
+#define PLATFORM_ESP8266
 
 #define HARDWARE_I2C
 
@@ -50,5 +50,9 @@ void printLog(char* log_msg);
 void drawSine(float frequency, uint8_t shift, bool set);
 
 void plot(float x, float y);
+
+void setContrast(uint8_t level);
+
+void resetLog();
 
 #endif
