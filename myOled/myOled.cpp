@@ -1,3 +1,4 @@
+/*SH1106 OLED driver */
 #include <Arduino.h>
 #include "font.h"
 #include "myOled.h"
