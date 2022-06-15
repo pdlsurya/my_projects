@@ -106,7 +106,7 @@ void setCursorPos(uint8_t x, uint8_t y)
 
 }
 
-void setCursor(uint8_t x, uint8_t y)
+void setCursor(uint8_t x, uint8_t y) //For display buffer
 {
 
   disp_column = x;
