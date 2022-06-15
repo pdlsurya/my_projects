@@ -16,7 +16,7 @@
 #include "softTimer.h"
 #include "debug_log.h"
 
-#define RTC_IRQ_PRIORITY 6
+#define RTC_IRQ_PRIORITY 6 //IRQ Priority level
 #define CC1_INT_MASK 1<<17
 #define RTC_PRESCALER 0
 #define NRF_RTC_MAX_CNT 0x00FFFFFF      //Maximum count of RTC
